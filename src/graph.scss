@@ -1,0 +1,36 @@
+
+.graph {
+
+
+  //display: flex;
+  //flex: 1;
+
+
+  height: 4rem;
+
+  .bar {
+    position: relative;
+    width: .25rem;
+    height: 100%;
+    display: inline-block;
+    margin-right: 1px;
+  }
+
+  .full, .value {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 1rem;
+  }
+
+  .full {
+    top: 0;
+    background: rgba(100,100,100,.1);
+  }
+
+  .value {
+    z-index: 1;
+    background: rgba(100,100,100,.2);
+  }
+}
