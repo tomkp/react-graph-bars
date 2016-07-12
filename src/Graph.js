@@ -1,10 +1,14 @@
 import React from 'react';
+import Color from 'color';
 import "./graph.scss";
 
 
 const Bar = ({value}) => {
- const style = {top: `${value * 100}%`};
- return (
+    const from = Color('blue').alpha(0.75);
+    const to = from.mix(Color('hotpink').alpha(0.75), value);
+    const style = {top: `${value * 100}%`, background: `${to.rgbString()}`};
+    //console.log(`${JSON.stringify(style)}`)
+    return (
     <div className="bar">
         <div className="full"></div>
         <div className="value" style={style}></div>
