@@ -3,11 +3,10 @@ import Color from 'color';
 import "./graph.scss";
 
 
-const Bar = ({value}) => {
-    const from = Color('#f00').alpha(.5);
-    const to = from.mix(Color('#00f').alpha(.5), value);
+const Bar = ({value, minColor = 'rgba(0, 0, 255, .75)', maxColor = 'rgba(255, 0, 0, .75)'}) => {
+    const from = Color(minColor);
+    const to = from.mix(Color(maxColor), value);
     const style = {top: `${value * 100}%`, background: `${to.rgbString()}`};
-    //console.log(`${JSON.stringify(style)}`)
     return (
     <div className="bar">
         <div className="full"></div>
