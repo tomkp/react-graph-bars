@@ -4,8 +4,8 @@ import "./graph.scss";
 
 
 const Bar = ({value}) => {
-    const from = Color('blue').alpha(0.75);
-    const to = from.mix(Color('hotpink').alpha(0.75), value);
+    const from = Color('#f00').alpha(.5);
+    const to = from.mix(Color('#00f').alpha(.5), value);
     const style = {top: `${value * 100}%`, background: `${to.rgbString()}`};
     //console.log(`${JSON.stringify(style)}`)
     return (
@@ -17,4 +17,4 @@ const Bar = ({value}) => {
 };
 
 
-export default ({data}) => <div className="graph">{ data.map((value, index) => <Bar key={index} value={value} />)}</div>
+export default ({name, data}) => <div className={`graph ${name}`}>{ data.map((value, index) => <Bar key={index} value={value} />)}</div>
