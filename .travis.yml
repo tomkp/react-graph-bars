@@ -3,3 +3,5 @@ node_js:
 - stable
 after_script:
 - npm run deploy
+notifications:
+  slack: tomkp:3iuipYQ5pPMXv5cnBHhZyj9p
