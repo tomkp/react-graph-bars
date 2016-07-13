@@ -4,7 +4,7 @@ import React from 'react';
 import {render} from 'react-dom';
 
 import Graph from '../src/Graph';
-
+import "./graph.scss";
 
 
 

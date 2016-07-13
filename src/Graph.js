@@ -1,6 +1,5 @@
 import React from 'react';
 import Color from 'color';
-import "./graph.scss";
 
 
 const Bar = ({value, minColor = 'rgba(0, 0, 255, .75)', maxColor = 'rgba(255, 0, 0, .75)'}) => {
