@@ -2,6 +2,6 @@ language: node_js
 node_js:
 - stable
 after_script:
-- npm run deploy
+- npm run deploy:demo
 notifications:
   slack: tomkp:3iuipYQ5pPMXv5cnBHhZyj9p
