@@ -2,7 +2,7 @@ import React from 'react';
 import Color from 'color';
 
 
-const Bar = ({value, minColor = 'rgba(0, 0, 255, .75)', maxColor = 'rgba(255, 0, 0, .75)'}) => {
+const Bar = ({value, minColor, maxColor}) => {
     const from = Color(minColor);
     const to = from.mix(Color(maxColor), value);
     const style = {top: `${value * 100}%`, background: `${to.rgbString()}`};
