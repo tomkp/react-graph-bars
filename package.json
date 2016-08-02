@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
-    "deploy": "npm run build && surge demo react-graph-bars.surge.sh",
+    "build:demo": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "deploy": "npm run build:demo && surge demo react-graph-bars.surge.sh",
     "lint": "eslint src"
   },
   "keywords": [],
