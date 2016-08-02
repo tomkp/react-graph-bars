@@ -1,6 +1,26 @@
 {
   "name": "react-graph-bars",
   "version": "1.0.1",
+  "description": "react bar graph",
+  "author": "tomkp <tom@tomkp.com> (http://tomkp.com)",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "react-component",
+    "es6",
+    "react-graph-bars",
+    "graph",
+    "bar-graph"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomkp/react-graph-bars"
+  },
+  "bugs": {
+    "url": "https://github.com/tomkp/react-graph-bars"
+  },
+  "homepage": "https://github.com/tomkp/react-graph-bars",
   "scripts": {
     "start": "node server.js",
     "build": "./node_modules/.bin/babel src/Graph.js -o index.js",
@@ -9,9 +29,6 @@
     "deploy:demo": "npm run build:demo && surge demo react-graph-bars.surge.sh",
     "lint": "eslint src"
   },
-  "keywords": [],
-  "author": "tom@tomkp.com",
-  "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.9.1",
     "color": "^0.11.3",
